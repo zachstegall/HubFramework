@@ -1876,6 +1876,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 8A0754951C21A79200AFAD38;
@@ -2258,9 +2259,24 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_TESTABILITY = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Weverything",
+					"-Wno-error=deprecated",
+					"-Wno-objc-missing-property-synthesis",
+					"-Wno-gnu-conditional-omitted-operand",
+					"-Wno-gnu",
+					"-Wno-reserved-id-macro",
+					"-Wno-auto-import",
+					"-Wno-missing-variable-declarations",
+					"-Wno-vla",
+					"-Werror",
+					"-Wno-objc-messaging-id",
+				);
 			};
 			name = Debug;
 		};
@@ -2269,9 +2285,24 @@
 			baseConfigurationReference = DD13758E1C68C76000AD3499 /* project.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
+				WARNING_CFLAGS = (
+					"-Weverything",
+					"-Wno-error=deprecated",
+					"-Wno-objc-missing-property-synthesis",
+					"-Wno-gnu-conditional-omitted-operand",
+					"-Wno-gnu",
+					"-Wno-reserved-id-macro",
+					"-Wno-auto-import",
+					"-Wno-missing-variable-declarations",
+					"-Wno-vla",
+					"-Werror",
+					"-Wno-objc-messaging-id",
+				);
 			};
 			name = Release;
 		};
@@ -2282,6 +2313,19 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				WARNING_CFLAGS = (
+					"-Weverything",
+					"-Wno-error=deprecated",
+					"-Wno-objc-missing-property-synthesis",
+					"-Wno-gnu-conditional-omitted-operand",
+					"-Wno-gnu",
+					"-Wno-reserved-id-macro",
+					"-Wno-auto-import",
+					"-Wno-missing-variable-declarations",
+					"-Wno-vla",
+					"-Werror",
+					"-Wno-objc-messaging-id",
+				);
 			};
 			name = Debug;
 		};
@@ -2291,6 +2335,19 @@
 				CLANG_ENABLE_MODULES = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				WARNING_CFLAGS = (
+					"-Weverything",
+					"-Wno-error=deprecated",
+					"-Wno-objc-missing-property-synthesis",
+					"-Wno-gnu-conditional-omitted-operand",
+					"-Wno-gnu",
+					"-Wno-reserved-id-macro",
+					"-Wno-auto-import",
+					"-Wno-missing-variable-declarations",
+					"-Wno-vla",
+					"-Werror",
+					"-Wno-objc-messaging-id",
+				);
 			};
 			name = Release;
 		};
